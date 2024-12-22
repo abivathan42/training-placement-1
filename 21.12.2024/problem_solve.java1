@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from stdin
+        Scanner scanner = new Scanner(System.in);
+
+        // Read inputs
+        int integerInput = scanner.nextInt();
+        int floatInput = scanner.nextInt();
+        int stringInput = scanner.nextInt();
+
+        // Print the inputs
+        System.out.println(integerInput);
+        System.out.println(floatInput);
+        System.out.println(stringInput);
+
+        // Close the scanner
+        scanner.close();
+    }
+}

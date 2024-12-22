@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read an integer from input
+        int n = scanner.nextInt();
+
+        // Logic to determine output
+        if (n % 2 != 0) {
+            // Odd numbers are weird
+            System.out.println("Weird");
+        } else {
+            // Even numbers
+            if (n >= 2 && n <= 5) {
+                System.out.println("Not Weird");
+            } else if (n >= 6 && n <= 20) {
+                System.out.println("Weird");
+            } else {
+                // n > 20
+                System.out.println("Not Weird");
+            }
+        }
+
+        scanner.close();
+    }
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read the inputs in the correct order
+        int integerInput = scanner.nextInt();
+        double doubleInput = scanner.nextDouble();
+        scanner.nextLine(); // Consume the remaining newline
+        String stringInput = scanner.nextLine();
+
+        // Print the outputs in the required order
+        System.out.println("String: " + stringInput);
+        System.out.println("Double: " + doubleInput);
+        System.out.println("Int: " + integerInput);
+
+        // Close the scanner
+        scanner.close();
+    }
+}

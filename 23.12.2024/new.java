@@ -1,13 +1,17 @@
 import java.util.Scanner;
-public class f{
+public class arr {
     public static void main(String[] args){
-        int n;
+        int i;
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the range:");
-        n=sc.nextInt();
-        for(int i=1;i<=n;i++){
-            System.out.println(i);
+        int score[] = new int[5];
+        for(i=0;i<5;i++){
+            score[i]=sc.nextInt();
         }
+        for(i=0;i<5;i++){
+            System.out.println(score[i]);
+        }
+
+
 
     }
     
